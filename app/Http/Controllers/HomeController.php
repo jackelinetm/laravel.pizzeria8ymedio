@@ -36,7 +36,6 @@ class HomeController extends Controller
                 'products.id',
                 'products.name',
                 'products.description',
-                'products.image',
                 'products.price',
             ])
             ->get();
