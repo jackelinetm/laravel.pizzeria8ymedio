@@ -1,0 +1,132 @@
+/* menu */
+.menu-section {
+  margin-bottom: 80px;
+}
+
+h3.menu-section-title {
+  font-size: 1.3em;
+    padding: 5px;
+  display: block;
+  margin: 0 0 20px;
+  text-transform: capitalize;
+  text-align: Center;
+  background: maroon;
+  border-radius: var(--border-radius);
+  margin-top: 20px;
+  color: #fff;
+}
+
+.menu-item {
+  margin: 40px 0;
+  font-size: 18px;
+}
+
+.menu-item:last-child {
+  margin-bottom: 0;
+}
+
+.menu-section {
+  margin-bottom: 80px;
+}
+
+.menu-section:nth-child(3),
+.menu-section:nth-child(4) {
+  margin-bottom: 0px;
+}
+
+.menu-section-title h5 {
+  font-size: 50px;
+  display: block;
+  font-weight: normal;
+  margin: 20px 0;
+  text-align: Center;
+}
+
+.border-dot {
+  padding-bottom: 10px;
+  border-bottom: 2px dotted #bbb;
+}
+
+.menu-item {
+  margin: 35px 0;
+  font-size: 18px;
+}
+
+.menu-item-name h6 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.menu-item-price h6 {
+  font-weight: 600;
+  font-size: 1.3em;
+  color: var(--primary-color);
+}
+
+.menu-item-description p {
+  margin-top: 10px;
+}
+
+
+@media (max-width: 1080px) {
+  h3.menu-section-title {
+    font-size: 1.8em;
+  }
+}
+
+@media (max-width: 991px) {
+  .menu-section:nth-child(3) {
+    margin-bottom: 80px;
+  }
+}
+
+@media (max-width: 736px) {
+  .menu-section,
+  .menu-section:nth-child(3) {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-section,
+  .menu-section:nth-child(3) {
+    margin-bottom: 50px;
+  }
+  .menu-item-name h6 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .menu-item-price h6 {
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 415px) {
+  .menu-item-name h6 {
+    font-size: 18px;
+  }
+  .menu-item-description p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+  h3.menu-section-title {
+    font-size: 1.6em;
+  }
+}
+
+
+
+.circular--square {
+  border-radius: 50%;
+  margin-left: 3%;
+  height:150px;
+  width:150px
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1199px) {
+  .circular--square{
+  height:100px;
+  width:100px
+  }
+}

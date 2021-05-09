@@ -1,0 +1,211 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 100;
+  src: url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN_r8OUuhs.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight:100;
+  src: url(https://fonts.gstatic.com/s/pacifico/v17/FwZY7-Qmy14u9lezJ-6H6Mw.ttf) format('truetype');
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+* {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 12px;
+}
+
+body{
+  margin: 0;
+  background-color:rgb(255, 255, 240);
+}
+
+.parallax1 {
+  background-image: url('../media/galeria/pizzeria6.jpg');
+  min-height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.center {
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.parallax2 {
+   background-image: url('../media/galeria/pizzeria7.jpg');
+  min-height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax3 {
+  background-image: url('../media/galeria/bandeja.jpg');
+  min-height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.parallax4 {
+   background-image: url('../media/galeria/rotolino2.jpg');
+  min-height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.panel {
+  height: 400px;
+  background-color:rgb(255, 255, 240);
+  font-size: 14px
+}
+
+.panel2 {
+  height: 600px;
+  background-color:maroon;
+  font-size: 14px
+}
+
+.ad {
+  padding: 1%;
+  height: 300px;
+  width: 300px;
+  top:40px;
+  left:70px;
+  background-color: maroon;
+  font-weight: 200;
+  color: white;
+
+}
+
+.card-columns {
+  column-count: 3;
+}
+
+/* 
+botones sin redondear de bootstrap */
+
+/**************************
+  DEFAULT BOOTSTRAP STYLES
+**************************/
+
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 10px 16px;
+}
+  
+.btn-lg {
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 6px;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color:darkred;
+  border-color: #ff4747;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: red;
+  border-color:white;
+}
+
+/***********************
+  SHARP BUTTONS
+************************/
+.sharp {
+  border-radius:0;
+}
+
+/***********************
+  CUSTOM BTN VALUES
+************************/
+
+.btn {
+  padding: 14px 24px;
+  border: 0 none;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.btn:focus, .btn:active:focus, .btn.active:focus {
+  outline: 0 none;
+}
+
+.form{
+  background-color: antiquewhite;
+}
+
+
+.image_full{
+  display:block;
+ }
+
+.image_mobile{
+ display:none;
+}
+
+
+@media (max-width: 1000px){
+ .image_full{
+  display:none;
+ }
+
+ .image_mobile{
+  display:block;
+ }
+
+ .panel2 {
+  height: 650px;
+  background-color:maroon;
+  font-size: 14px
+}
+
+@media (max-width: 766px){
+
+  .panel2 {
+   height: 750px;
+   background-color:maroon;
+   font-size: 14px
+ }
+
+}
