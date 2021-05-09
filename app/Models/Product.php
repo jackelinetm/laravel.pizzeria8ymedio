@@ -22,10 +22,10 @@ class Product extends Model
     ];
 
     public function get_image()
-    {
+    {   //si no tiene foto asignada utilizar pizza.png
         if(empty($this->image)) {
             return asset('pizza.png');
-        }
+        }// buscar el path de ubicación en storage
         else {
             return asset('storage/' . $this->image);
         }

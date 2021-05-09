@@ -24,7 +24,7 @@ class CartController extends Controller
             $product->id,
             $product->name,
             $product->price,
-            1, //quantity is 1 by default when add-to-cart is clicked
+            1, //Cantidad es 1 por defecto when add-to-cart is clicked
             [
                 'image' => $product->get_image(),
                 'category' => $product->category->name,

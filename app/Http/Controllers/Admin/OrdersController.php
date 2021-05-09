@@ -27,7 +27,6 @@ class OrdersController extends Controller
             ->addColumn('action', function ($order) {
                 return '<span class="pull-right">' .
                     '<a href="' . route('admin.orders.detail', ['id' => $order->id]) . '" class="btn btn-xs btn-link p-1" title="Detail">Ver</a>' .
-                    //'<a href="javascript:void(0);" onclick="return confirm_delete(\'' '\', \'' .'\');" class="btn btn-xs btn-link" title="Delete"><i class="fa text-danger fa-trash"></i></a>' .
                     '</span>';
             })
             ->editColumn('created_at', function ($order) {
@@ -52,6 +51,7 @@ class OrdersController extends Controller
         }
     }
 
+    // Cambiar el estatus del pedido
     public function change_status(Request $request)
     {
         if ($order = Order::find($request->get('id'))) {

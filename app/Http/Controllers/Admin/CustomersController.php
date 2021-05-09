@@ -18,7 +18,8 @@ class CustomersController extends Controller
     }
 
     public function list()
-    {
+    {   
+        // Busca todos los registros de usuario en la base de datos
         $query = DB::table('users')
             ->leftJoin('orders', 'orders.user_id', '=', 'users.id')
             ->groupByRaw('users.id,
@@ -31,6 +32,7 @@ class CustomersController extends Controller
                             users.created_at');
 
         return Datatables::query($query)
+        // Crea la tabla con el query
             ->addColumn('action', function ($user) {
                 return '<span class="text-right">' .
                     '<form action="'.route('customers.destroy', $user->id).'" method="post">
@@ -114,7 +116,6 @@ class CustomersController extends Controller
     {
         if($customer = User::find($id)) {
             $customer->delete();
-
             return redirect()->route('customers.index')->with('message', 'Cliente eliminado.');
         }
     }

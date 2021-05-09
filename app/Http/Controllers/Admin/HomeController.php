@@ -30,7 +30,7 @@ class HomeController extends Controller
             return redirect()->route('dashboard');
 
         } else {
-            return back()->withInput(['email'])->with('message', 'Invalid email/password.');
+            return back()->withInput(['email'])->with('message', 'Password inválido.');
         }
     }
 

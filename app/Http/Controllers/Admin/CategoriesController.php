@@ -19,7 +19,7 @@ class CategoriesController extends Controller
 
     public function list()
     {
-
+        // devuelve la tabla con todas las columnas y categorías
         return Datatables::eloquent(Category::orderBy('name'))
             ->addColumn('action', function ($category) {
                 return '<span class="text-right">' .
