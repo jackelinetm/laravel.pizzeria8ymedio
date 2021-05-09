@@ -49,7 +49,7 @@
                                 <div class="row ">
                                     <div class="col-2"></div>
                                     <div class="col-6 menu-item-name">
-                                        <h6>Total Amount</h6>
+                                        <h6>Cantidad total</h6>
                                     </div>
                                     <div class="col-4 menu-item-price text-right">
                                         <h6>{{ number_format($order->amount, 2) }}</h6>

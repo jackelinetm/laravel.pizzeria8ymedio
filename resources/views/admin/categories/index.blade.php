@@ -41,19 +41,24 @@
     let categories_list = null;
 
     $(document).ready(function(){
-
+        //DataTables jQuery Javascript library.
         categories_list = $('#the-table').DataTable({
             processing: true,
             serverSide: true,
             ajax: {
                 url: `{{ route('categories.list') }}`,
+                //método del controlador
                 method: 'get'
             },
             order: [[0, 'desc']],
             columns: [
                 {data: 'id', name: 'id'},
                 {data: 'name', name: 'name'},
-                { data: 'action', name: 'action', cssClass: 'text-right', orderable: false, searchable: false }
+                { data: 'action',
+                name: 'action', 
+                cssClass: 'text-right',
+                orderable: false,
+                searchable: false }
             ],
         });
 

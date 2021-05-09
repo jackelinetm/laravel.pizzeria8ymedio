@@ -37,17 +37,3 @@
         </div>
     </div>
 @endsection
-@push('scripts')
-    <script type="text/javascript">
-
-        let categories_list = null;
-
-        $(document).ready(function () {
-
-
-        });
-
-
-    </script>
-
-@endpush

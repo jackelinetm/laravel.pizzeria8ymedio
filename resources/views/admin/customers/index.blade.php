@@ -38,12 +38,13 @@
     let customers_list = null;
 
     $(document).ready(function(){
-
+        //DataTables jQuery Javascript library.
         customers_list = $('#the-table').DataTable({
             processing: true,
             serverSide: true,
             ajax: {
                 url: `{{ route('customers.list') }}`,
+                //método list de customers
                 method: 'get'
             },
             order: [[1, 'asc']],

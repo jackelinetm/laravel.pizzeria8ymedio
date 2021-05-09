@@ -42,11 +42,13 @@
     let products_list = null;
 
     $(document).ready(function(){
+        //DataTables jQuery Javascript library.
         products_list = $('#the-table').DataTable({
             processing: true,
             serverSide: true,
             ajax: {
                 url: `{{ route('products.list') }}`,
+                //método list de products
                 method: 'get'
             },
             order: [[1, 'asc'],[2, 'asc']],
@@ -56,7 +58,11 @@
                 {data: 'name', name: 'products.name'},
                 {data: 'description', name: 'products.description'},
                 {data: 'price', name: 'products.price', className: 'text-right',},
-                { data: 'action', name: 'action', cssClass: 'text-right', orderable: false, searchable: false }
+                { data: 'action',
+                 name: 'action',
+                 cssClass: 'text-right',
+                 orderable: false,
+                searchable: false }
             ],
         });
     });
